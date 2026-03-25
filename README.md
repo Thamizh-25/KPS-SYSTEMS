@@ -17,6 +17,7 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 ### 🎯 Core Features
 - **Enterprise Product Catalog** - High-performance components for critical infrastructure
 - **Detailed Product Modals** - Click any product to view comprehensive specifications, features, and pricing
+- **Modern Authentication** - Secure Login and Signup pages with form validation
 - **Professional UI/UX** - Award-worthy design inspired by top e-commerce platforms
 - **PDF Downloads** - One-click access to detailed product specification sheets
 - **Email Subscription** - Newsletter signup for updates and exclusive technical insights
@@ -82,8 +83,11 @@ KPS-SYSTEMS/
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx          # Navigation header with logo and links
-│   │   └── LandingPage.jsx      # Main landing page with all sections
-│   ├── App.jsx                 # Main application component
+│   │   ├── LandingPage.jsx      # Main landing page with all sections
+│   │   ├── Auth.jsx            # Authentication container with tab switching
+│   │   ├── Login.jsx           # Login page with email/password validation
+│   │   └── Signup.jsx          # Signup page with password strength indicator
+│   ├── App.jsx                 # Main application component with routing
 │   ├── main.jsx                # React entry point
 │   └── index.css              # Global styles
 ├── package.json         # Project dependencies
@@ -100,35 +104,45 @@ KPS-SYSTEMS/
 | **React** | 19.2.4 | UI library and component framework |
 | **Vite** | 8.0.1 | Fast build tool and development server |
 | **Tailwind CSS** | 4.2.2 | Utility-first CSS framework |
+| **Lucide React** | Latest | Modern icon library for UI components |
 | **JavaScript** | ES6+ | Modern JavaScript with JSX support |
 
 ## 📄 Features in Detail
 
-### 1. Responsive Navbar
+### 1. Authentication System
+- **Login Page**: Email/password authentication with validation
+- **Signup Page**: New account creation with password strength meter
+- **Password Confirmation**: Real-time feedback for matching passwords
+- **Social Sign-in**: Google and GitHub authentication buttons
+- **Form Validation**: Email format, password requirements, and field requirements
+- **Responsive Auth Container**: Beautiful gradient background with animated blob effects
+- **Tab Navigation**: Smooth switching between Login and Signup modes
+
+### 2. Responsive Navbar
 - Sticky navigation header with KPS SYSTEMS branding
 - Quick access to product categories
-- Account and search functionality
+- Account button for authentication
 - Professional styling with emerald accents
 
-### 2. Hero Section
+### 3. Hero Section
 - Eye-catching headline with gradient text
 - Clear value proposition
 - Call-to-action buttons
 - Animated background elements with floating effects
 
-### 3. Product Categories
+### 4. Product Categories
 - Two featured category cards (UPS Systems & Motherboards)
 - Large, clickable cards with hover effects
 - Gradient backgrounds with professional styling
 
-### 4. Products Grid
+### 5. Products Grid
 - 6-product showcase with detailed cards
 - Click any product to open detailed modal
 - Quick access to product specifications
 - Price display in Indian Rupees (₹)
 - In-stock indicators
 
-### 5. Product Detail Modal
+### 6. Product Detail Modal
 - Centered modal with product information
 - Large product icon/image
 - Complete technical specifications
@@ -137,7 +151,7 @@ KPS-SYSTEMS/
 - PDF download buttons
 - Smooth animations and transitions
 
-### 6. Features Section
+### 7. Features Section
 - Why Choose KPS SYSTEMS messaging
 - 4 key selling points:
   - Enterprise Reliability (99.99% uptime)
@@ -145,12 +159,12 @@ KPS-SYSTEMS/
   - Competitive Pricing (bulk discounts)
   - Rapid Deployment (same-day shipping)
 
-### 7. Email Subscription (CTA)
+### 8. Email Subscription (CTA)
 - Newsletter signup form
 - Enterprise-focused messaging
 - Modern input styling with backdrop blur
 
-### 8. Professional Footer
+### 9. Professional Footer
 - Multi-column layout with links
 - Product, Support, Company, and Contact sections
 - Copyright and legal links
@@ -246,8 +260,10 @@ npm run build
 - 🔄 Email subscription handler
 - 🔄 Shopping cart system
 - 🔄 Payment gateway integration
-- 🔄 User authentication
+- 🔄 OAuth implementation (Google & GitHub)
 - 🔄 Admin dashboard
+- 🔄 User profile management
+- 🔄 Order history tracking
 
 ## 📞 Support & Contact
 
