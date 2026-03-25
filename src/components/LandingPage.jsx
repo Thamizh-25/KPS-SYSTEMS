@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 
-export default function LandingPage() {
+export default function LandingPage({ onNavigateToAuth }) {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -11,7 +11,7 @@ export default function LandingPage() {
 
   return (
     <div className="bg-white text-gray-900">
-      <Navbar />
+      <Navbar onAuthClick={onNavigateToAuth} />
 
       {/* Hero Section - Tech Focused */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-white via-gray-50 to-gray-100">

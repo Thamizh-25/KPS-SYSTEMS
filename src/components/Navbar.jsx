@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar({ onAuthClick }) {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm animate-fade-in">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -41,7 +41,10 @@ export default function Navbar() {
                 🔍
               </span>
             </button>
-            <button className="px-6 py-2 bg-emerald-600 text-white text-sm font-medium rounded-full hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-600/40">
+            <button
+              onClick={onAuthClick}
+              className="px-6 py-2 bg-emerald-600 text-white text-sm font-medium rounded-full hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-600/40"
+            >
               Account
             </button>
           </div>
