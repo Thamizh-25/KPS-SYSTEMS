@@ -59,7 +59,7 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
    ```bash
    npm run dev
    ```
-   The application will be available at `http://localhost:5173`
+   The application will be available at `http://localhost:5173` (or the next available port if 5173 is in use)
 
 ### Build for Production
 
@@ -249,10 +249,12 @@ npm run build
 ## 🐛 Known Issues & Roadmap
 
 ### Current Status
-- ✅ Fully functional frontend
-- ✅ Responsive design
-- ✅ Product modal system
-- ✅ Professional UI/UX
+- ✅ Fully functional frontend with responsive design
+- ✅ Modern authentication system (Login/Signup)
+- ✅ Product catalog with detailed modals
+- ✅ Professional UI/UX with Tailwind CSS
+- ✅ Email validation and form handling
+- ✅ Social authentication buttons (UI ready)
 
 ### Planned Features
 - 🔄 Backend integration for product database
@@ -268,10 +270,8 @@ npm run build
 ## 📞 Support & Contact
 
 For questions or support regarding KPS SYSTEMS:
-- **Email**: support@kpssystems.com
-- **Phone**: +91-XXXX-XXXX-XXXX
-- **Website**: www.kpssystems.com
-- **Live Chat**: Available on the platform
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Thamizh-25/KPS-SYSTEMS/issues)
+- **GitHub Discussions**: [Join community discussions](https://github.com/Thamizh-25/KPS-SYSTEMS/discussions)
 
 ## 📄 License
 
@@ -281,6 +281,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 **Thamizh-25**
 - GitHub: [@Thamizh-25](https://github.com/Thamizh-25)
+- Email: thamizh.2005selvan@gmail.com
 - Repository: [KPS-SYSTEMS](https://github.com/Thamizh-25/KPS-SYSTEMS)
 
 ## 🤝 Contributing
