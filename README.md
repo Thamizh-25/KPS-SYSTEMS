@@ -15,6 +15,7 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 ## ✨ Features
 
 ### 🎯 Core Features
+
 - **Enterprise Product Catalog** - High-performance components for critical infrastructure
 - **Detailed Product Modals** - Click any product to view comprehensive specifications, features, and pricing
 - **Modern Authentication** - Secure Login and Signup pages with form validation
@@ -24,6 +25,7 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 
 ### 🎨 Design Highlights
+
 - **Trust-Focused Color Palette** - Emerald green (#059669), white, and dark gray backgrounds
 - **Clean Typography** - Light, professional font weights with refined hierarchy
 - **Smooth Animations** - Subtle, elegant transitions without bounce effects
@@ -31,6 +33,7 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 - **Modern Modal System** - Beautiful product detail overlays with seamless interactions
 
 ### 📦 Product Categories
+
 1. **UPS Systems** - Uninterruptible Power Supply solutions for data centers
 2. **Enterprise Motherboards** - Server-grade computing platforms
 3. **High-Capacity Power Supplies** - Modular, efficient PSU units
@@ -39,26 +42,31 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn package manager
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Thamizh-25/KPS-SYSTEMS.git
    cd KPS-SYSTEMS
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
+
    The application will be available at `http://localhost:5173` (or the next available port if 5173 is in use)
 
 ### Build for Production
@@ -77,7 +85,7 @@ npm run preview
 
 ## 📁 Project Structure
 
-```
+```text
 KPS-SYSTEMS/
 ├── public/              # Static assets
 ├── src/
@@ -100,7 +108,7 @@ KPS-SYSTEMS/
 ## 🎛️ Technical Stack
 
 | Technology | Version | Purpose |
-|-----------|---------|---------|
+| --- | --- | --- |
 | **React** | 19.2.4 | UI library and component framework |
 | **Vite** | 8.0.1 | Fast build tool and development server |
 | **Tailwind CSS** | 4.2.2 | Utility-first CSS framework |
@@ -110,6 +118,7 @@ KPS-SYSTEMS/
 ## 📄 Features in Detail
 
 ### 1. Authentication System
+
 - **Login Page**: Email/password authentication with validation
 - **Signup Page**: New account creation with password strength meter
 - **Password Confirmation**: Real-time feedback for matching passwords
@@ -119,23 +128,27 @@ KPS-SYSTEMS/
 - **Tab Navigation**: Smooth switching between Login and Signup modes
 
 ### 2. Responsive Navbar
+
 - Sticky navigation header with KPS SYSTEMS branding
 - Quick access to product categories
 - Account button for authentication
 - Professional styling with emerald accents
 
 ### 3. Hero Section
+
 - Eye-catching headline with gradient text
 - Clear value proposition
 - Call-to-action buttons
 - Animated background elements with floating effects
 
 ### 4. Product Categories
+
 - Two featured category cards (UPS Systems & Motherboards)
 - Large, clickable cards with hover effects
 - Gradient backgrounds with professional styling
 
 ### 5. Products Grid
+
 - 6-product showcase with detailed cards
 - Click any product to open detailed modal
 - Quick access to product specifications
@@ -143,6 +156,7 @@ KPS-SYSTEMS/
 - In-stock indicators
 
 ### 6. Product Detail Modal
+
 - Centered modal with product information
 - Large product icon/image
 - Complete technical specifications
@@ -152,6 +166,7 @@ KPS-SYSTEMS/
 - Smooth animations and transitions
 
 ### 7. Features Section
+
 - Why Choose KPS SYSTEMS messaging
 - 4 key selling points:
   - Enterprise Reliability (99.99% uptime)
@@ -160,11 +175,13 @@ KPS-SYSTEMS/
   - Rapid Deployment (same-day shipping)
 
 ### 8. Email Subscription (CTA)
+
 - Newsletter signup form
 - Enterprise-focused messaging
 - Modern input styling with backdrop blur
 
 ### 9. Professional Footer
+
 - Multi-column layout with links
 - Product, Support, Company, and Contact sections
 - Copyright and legal links
@@ -175,7 +192,7 @@ KPS-SYSTEMS/
 The design uses a professional trust-focused palette:
 
 | Color | Hex Code | Usage |
-|-------|---------|-------|
+| --- | --- | --- |
 | **Emerald** | #059669 | Primary brand color, buttons, accents |
 | **Teal** | #14B8A6 | Secondary elements, gradients |
 | **White** | #FFFFFF | Backgrounds, clean spaces |
@@ -191,7 +208,9 @@ The design uses a professional trust-focused palette:
 ## 🔧 Key Customizations
 
 ### Product Data
+
 Edit product list in `src/components/LandingPage.jsx`:
+
 ```javascript
 {
   name: "Product Name",
@@ -204,29 +223,35 @@ Edit product list in `src/components/LandingPage.jsx`:
 ```
 
 ### Styling
+
 All styles use Tailwind CSS utility classes. Customize:
+
 - Colors: Modify Tailwind color values in classNames
 - Fonts: Update font weights in tailwind.config.js
 - Spacing: Adjust padding/margin values with Tailwind units
 
 ### Navigation Links
+
 Update links in `src/components/Navbar.jsx`
 
 ## 🚀 Deployment
 
 ### Deploy to Vercel
+
 ```bash
 npm install -g vercel
 vercel
 ```
 
 ### Deploy to Netlify
+
 ```bash
 npm run build
 # Upload the dist/ folder to Netlify
 ```
 
 ### Deploy to GitHub Pages
+
 ```bash
 npm run build
 # Push dist/ folder to gh-pages branch
@@ -249,6 +274,7 @@ npm run build
 ## 🐛 Known Issues & Roadmap
 
 ### Current Status
+
 - ✅ Fully functional frontend with responsive design
 - ✅ Modern authentication system (Login/Signup)
 - ✅ Product catalog with detailed modals
@@ -257,6 +283,7 @@ npm run build
 - ✅ Social authentication buttons (UI ready)
 
 ### Planned Features
+
 - 🔄 Backend integration for product database
 - 🔄 PDF generation and download functionality
 - 🔄 Email subscription handler
@@ -270,6 +297,7 @@ npm run build
 ## 📞 Support & Contact
 
 For questions or support regarding KPS SYSTEMS:
+
 - **GitHub Issues**: [Report bugs or request features](https://github.com/Thamizh-25/KPS-SYSTEMS/issues)
 - **GitHub Discussions**: [Join community discussions](https://github.com/Thamizh-25/KPS-SYSTEMS/discussions)
 
@@ -279,9 +307,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## 👨‍💼 Author
 
-**Thamizh-25**
+Thamizh-25
+
 - GitHub: [@Thamizh-25](https://github.com/Thamizh-25)
-- Email: thamizh.2005selvan@gmail.com
+- Email: [thamizh.2005selvan@gmail.com](mailto:thamizh.2005selvan@gmail.com)
 - Repository: [KPS-SYSTEMS](https://github.com/Thamizh-25/KPS-SYSTEMS)
 
 ## 🤝 Contributing
