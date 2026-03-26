@@ -18,19 +18,25 @@ Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, profe
 
 - **Enterprise Product Catalog** - High-performance components for critical infrastructure
 - **Detailed Product Modals** - Click any product to view comprehensive specifications, features, and pricing
-- **Modern Authentication** - Secure Login and Signup pages with form validation
-- **Professional UI/UX** - Award-worthy design inspired by top e-commerce platforms
+- **Modern Authentication** - Secure Login and Signup pages with form validation and animations
+- **Professional UI/UX** - Award-worthy design with premium gradient effects and modern interactions
 - **PDF Downloads** - One-click access to detailed product specification sheets
 - **Email Subscription** - Newsletter signup for updates and exclusive technical insights
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Dark Mode Support** - Complete dark/light theme toggle with localStorage persistence
+- **Smooth Animations** - Custom CSS keyframes with float, fade-in, and slide-in effects
+- **Icon Integration** - Lucide React icons for consistent, modern UI elements
 
 ### 🎨 Design Highlights
 
-- **Trust-Focused Color Palette** - Emerald green (#059669), white, and dark gray backgrounds
-- **Clean Typography** - Light, professional font weights with refined hierarchy
-- **Smooth Animations** - Subtle, elegant transitions without bounce effects
-- **Professional Hover States** - Sophisticated shadows and opacity changes (no scaling)
-- **Modern Modal System** - Beautiful product detail overlays with seamless interactions
+- **Trust-Focused Color Palette** - Emerald & teal gradients with white and slate backgrounds
+- **Dark Mode** - Complete dark/light theme with smooth transitions
+- **Premium Animations** - Floating effects, fade-ins, and slide-ins (CPU-optimized, no bounce)
+- **Professional Hover States** - Scale transforms, shadow effects, and gradient shifts
+- **Modern Modal System** - Beautiful product detail overlays with backdrop blur
+- **Gradient Accents** - Emerald-to-teal gradients for CTA buttons and branded elements
+- **Typography Hierarchy** - Light font weights for premium feel with bold accents
+- **Responsive Containers** - Tailwind grid system with adaptive breakpoints
 
 ### 📦 Product Categories
 
@@ -90,18 +96,19 @@ KPS-SYSTEMS/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx          # Navigation header with logo and links
-│   │   ├── LandingPage.jsx      # Main landing page with all sections
+│   │   ├── Navbar.jsx          # Navigation header with dark mode toggle
+│   │   ├── LandingPage.jsx      # Full landing page with all sections
 │   │   ├── Auth.jsx            # Authentication container with tab switching
-│   │   ├── Login.jsx           # Login page with email/password validation
+│   │   ├── Login.jsx           # Login page with form validation
 │   │   └── Signup.jsx          # Signup page with password strength indicator
-│   ├── App.jsx                 # Main application component with routing
+│   ├── App.jsx                 # Main app component with theme management
 │   ├── main.jsx                # React entry point
-│   └── index.css              # Global styles
+│   └── index.css               # Global styles with animations
 ├── package.json         # Project dependencies
 ├── vite.config.js       # Vite configuration
+├── tailwind.config.js   # Tailwind CSS v4 with dark mode config
 ├── eslint.config.js     # ESLint configuration
-├── index.html           # HTML template
+├── index.html           # HTML template with SEO meta tags
 └── README.md           # This file
 ```
 
@@ -117,75 +124,97 @@ KPS-SYSTEMS/
 
 ## 📄 Features in Detail
 
-### 1. Authentication System
+### 1. Dark Mode Support
 
-- **Login Page**: Email/password authentication with validation
-- **Signup Page**: New account creation with password strength meter
-- **Password Confirmation**: Real-time feedback for matching passwords
-- **Social Sign-in**: Google and GitHub authentication buttons
-- **Form Validation**: Email format, password requirements, and field requirements
-- **Responsive Auth Container**: Beautiful gradient background with animated blob effects
-- **Tab Navigation**: Smooth switching between Login and Signup modes
+- **Theme Toggle** - Smooth animated toggle switch in navbar
+- **System Detection** - Auto-detects user's OS dark mode preference
+- **LocalStorage Persistence** - Saves theme preference across sessions
+- **Complete Coverage** - All components optimized for dark and light modes
+- **Smooth Transitions** - 300ms CSS transitions for theme changes
+- **Accessibility** - High contrast ratios in both themes
 
-### 2. Responsive Navbar
+### 2. Authentication System
 
-- Sticky navigation header with KPS SYSTEMS branding
-- Quick access to product categories
-- Account button for authentication
-- Professional styling with emerald accents
+- **Login Page**: Modern gradient design with email/password validation
+- **Signup Page**: Complete registration with password strength meter and confirmation
+- **Password Strength**: Real-time visual indicator (weak/medium/strong)
+- **Social Sign-in**: Google and GitHub authentication button UI
+- **Form Validation**: Email format, password requirements, field validation
+- **Animated Modals**: Backdrop blur with smooth scale animations
+- **Tab Navigation**: Seamless switching between Login and Signup with icon buttons
+- **Loading States**: Spinner animation during form submission
 
-### 3. Hero Section
+### 3. Responsive Navbar
 
-- Eye-catching headline with gradient text
-- Clear value proposition
-- Call-to-action buttons
-- Animated background elements with floating effects
+- **Sticky Navigation**: Always accessible header
+- **Animated Toggle**: Smooth dark mode switch with sun/moon icons
+- **Mobile Menu**: Hamburger menu for mobile devices
+- **KPS SYSTEMS Branding**: Gradient logo with spacing
+- **Quick Links**: Product categories and auth buttons
+- **Professional Styling**: Emerald/teal gradients with smooth transitions
 
-### 4. Product Categories
+### 4. Hero Section
 
-- Two featured category cards (UPS Systems & Motherboards)
-- Large, clickable cards with hover effects
-- Gradient backgrounds with professional styling
+- **Full-Screen Layout**: Immersive landing experience
+- **Animated Background**: Floating blob elements with smooth animations
+- **Gradient Headlines**: Eye-catching text with emerald-to-teal gradient
+- **Clear CTA**: Two button options (primary + secondary)
+- **Value Proposition**: Multi-line headline with detailed description
+- **Staggered Animations**: Elements fade in with slight delays
 
-### 5. Products Grid
+### 5. Product Categories
 
-- 6-product showcase with detailed cards
-- Click any product to open detailed modal
-- Quick access to product specifications
-- Price display in Indian Rupees (₹)
-- In-stock indicators
+- **Featured Cards**: Two large, clickable category cards
+- **Gradient Backgrounds**: Emerald and teal gradient overlays
+- **Hover Effects**: Icon scaling and text reveal on hover
+- **Icon Integration**: Large emoji indicators for category types
+- **Explore Button**: Hidden "Explore" text that appears on hover
 
-### 6. Product Detail Modal
+### 6. Products Grid
 
-- Centered modal with product information
-- Large product icon/image
-- Complete technical specifications
-- Detailed product description
-- Pricing and stock status
-- PDF download buttons
-- Smooth animations and transitions
+- **3-Column Layout**: Responsive grid (1 col mobile, 2 col tablet, 3 col desktop)
+- **Product Cards**: Icon display with hover button reveal
+- **Quick Stats**: Price in INR with in-stock badges
+- **Hover Effects**: Scale up and enhanced shadow effects
+- **Click Interaction**: Opens detailed product modal on click
 
-### 7. Features Section
+### 7. Product Detail Modal
 
-- Why Choose KPS SYSTEMS messaging
-- 4 key selling points:
+- **Centered Overlay**: Backdrop blur with dark overlay
+- **Header Section**: Product name, specs, and close button
+- **Icon Display**: Large product icon in centered box
+- **Sections**: About (description), Technical Specs (detailed list)
+- **Pricing Display**: Large gradient text with stock indicator
+- **Action Buttons**: PDF download and close buttons
+- **Smooth Animations**: Slide-in and fade-in effects
+
+### 8. Features Section
+
+- **Card-Based Design**: 2x2 grid layout with hover effects
+- **Icon Components**: Lucide React icons for visual appeal
+- **Hover Animation**: Card scales up and moves higher on hover
+- **4 Key Features**:
   - Enterprise Reliability (99.99% uptime)
   - Expert Technical Support (24/7)
   - Competitive Pricing (bulk discounts)
-  - Rapid Deployment (same-day shipping)
+  - Same-Day Shipping (rapid deployment)
 
-### 8. Email Subscription (CTA)
+### 9. Email Subscription (CTA)
 
-- Newsletter signup form
-- Enterprise-focused messaging
-- Modern input styling with backdrop blur
+- **Full-Width Section**: Black gradient background
+- **Animated Blobs**: Background floating elements
+- **Email Input**: Modern placeholder with focus states
+- **Subscribe Button**: Gradient with hover scale effect
+- **Privacy Notice**: Legal disclaimer
+- **Responsive Layout**: Stacks on mobile devices
 
-### 9. Professional Footer
+### 10. Professional Footer
 
-- Multi-column layout with links
-- Product, Support, Company, and Contact sections
-- Copyright and legal links
-- Social proof and branding
+- **4-Column Layout**: Products, Support, Company, Contact sections
+- **Icon Indicators**: Visual icons for each section
+- **Hover Effects**: Link transitions with color changes
+- **Copyright Info**: Brand name and legal links
+- **Mobile Responsive**: Stacks vertically on smaller screens
 
 ## 🎨 Color Scheme
 
@@ -276,23 +305,30 @@ npm run build
 ### Current Status
 
 - ✅ Fully functional frontend with responsive design
-- ✅ Modern authentication system (Login/Signup)
+- ✅ Modern authentication system (Login/Signup) with animations
 - ✅ Product catalog with detailed modals
-- ✅ Professional UI/UX with Tailwind CSS
+- ✅ Professional UI/UX with Tailwind CSS v4
 - ✅ Email validation and form handling
 - ✅ Social authentication buttons (UI ready)
+- ✅ Dark Mode support with theme persistence
+- ✅ All custom CSS animations (float, fade-in, slide-in)
+- ✅ Lucide React icon integration
+- ✅ SEO meta tags and accessibility optimizations
+- ✅ Zero compilation errors
 
 ### Planned Features
 
 - 🔄 Backend integration for product database
 - 🔄 PDF generation and download functionality
-- 🔄 Email subscription handler
-- 🔄 Shopping cart system
-- 🔄 Payment gateway integration
+- 🔄 Email subscription handler with backend validation
+- 🔄 Shopping cart system with local storage
+- 🔄 Payment gateway integration (Razorpay, Stripe)
 - 🔄 OAuth implementation (Google & GitHub)
-- 🔄 Admin dashboard
-- 🔄 User profile management
-- 🔄 Order history tracking
+- 🔄 Admin dashboard for product management
+- 🔄 User profile management and preferences
+- 🔄 Order history tracking and notifications
+- 🔄 Advanced search and filtering
+- 🔄 Product reviews and ratings system
 
 ## 📞 Support & Contact
 
@@ -339,8 +375,9 @@ Contributions are welcome! To contribute:
 
 ---
 
-**Version**: 1.0.0  
-**Last Updated**: March 24, 2026  
+**Version**: 1.1.0  
+**Last Updated**: March 26, 2026  
 **Status**: Active Development ✨
 
+Modern e-commerce platform with enterprise focus, built with React 19, Tailwind CSS v4, and Vite.
 Made with ❤️ for enterprise solutions.
