@@ -1,16 +1,18 @@
-# KPS SYSTEMS - Enterprise Component Solutions
+# 🛒 Tech Store - E-Commerce Platform
 
-![KPS SYSTEMS](https://img.shields.io/badge/KPS-SYSTEMS-emerald)
-![React](https://img.shields.io/badge/React-19.2.4-blue)
-![Vite](https://img.shields.io/badge/Vite-8.0.1-blueviolet)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.2.2-06B6D4)
+A modern, fully responsive e-commerce website for premium tech gadgets and electronics. Built with React, Vite, and Tailwind CSS, featuring a beautiful UI with dark mode support, product filtering, search functionality, and wishlist management.
+
+![Tech Store](https://img.shields.io/badge/Tech-Store-orange)
+![React](https://img.shields.io/badge/React-18+-blue)
+![Vite](https://img.shields.io/badge/Vite-8.0-purple)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3+-06B6D4)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## Overview
+## 📱 Overview
 
-**KPS SYSTEMS** is a modern, professional e-commerce platform designed for enterprise-grade electronic components. Specializing in UPS (Uninterruptible Power Supply) systems, motherboards, power supplies, and other critical infrastructure components.
+**Tech Store** is a modern, fully responsive e-commerce platform dedicated to premium tech products and gadgets. Whether you're looking for high-end audio equipment, mechanical keyboards, precision mice, or 4K monitors, we've got you covered!
 
-Built with cutting-edge web technologies, KPS SYSTEMS delivers a seamless, professional user experience with sophisticated design patterns inspired by award-winning e-commerce platforms.
+Built with cutting-edge web technologies including React 18+, Vite 8.0, and Tailwind CSS, Tech Store delivers a seamless shopping experience with professional design patterns and intuitive user interface.
 
 ## ✨ Features
 
